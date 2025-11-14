@@ -55,12 +55,12 @@ function PrivacyPolicy() {
         <p>Individuals may also request access to their personal information by making a request via the contact details set out below.</p>
         <h2>4. Resolving Privacy Issues and Complaints </h2>
         <p>Any issues or complaints in relation to the collection, use, disclosure, quality, security of and access to your personal information may be made to the DGC Secretary (designated Privacy Officer). </p>
-        <div className="wordFrame">
+        {/* <div className="wordFrame">
           <p>Mrs Avril Clark</p>
           <p>Doncaster Garden Club Inc</p>
           <p>62 Pine Hill Drive, DONCASTER EAST VIC 3109 </p>
           <p>Or by email <strong>avril@spiritofprogress.com.au</strong> </p>
-        </div>
+        </div> */}
         <p><em>From time to time, DGC may review and amend this Privacy Policy to consider new laws and technology, changes to our operations and practices and the changing business environment.</em></p>
     </div>
   )

@@ -66,7 +66,9 @@ function Newsletters() {
     "5. June 2025 Newsletter.pdf",
     "6. July 2025 Newsletter.pdf",
     "7. August 2025 Newsletter.pdf",
-    "8. September 2025 Newsletter.pdf"
+    "8. September 2025 Newsletter.pdf",
+    "9. October 2025 Newsletter.pdf",
+    "10. November 2025 Newsletter.pdf"
   ]
 
   return (
@@ -74,7 +76,7 @@ function Newsletters() {
     <div style={{padding:"10px"}}>
     <h1>Newsletters</h1> 
     <h2>September 2025 Newsletter</h2>
-    <iframe title="2025" src="/documentation/newsletter/2025/8. September 2025 Newsletter.pdf" width="100%" height="800px"></iframe>
+    <iframe title="2025" src="/documentation/newsletter/2025/10. November 2025 Newsletter.pdf" width="100%" height="800px"></iframe>
 
       <Row style={{ textAlign:"center"}}>
       <Col lg={12} style={{ marginTop:"20px"}}>
