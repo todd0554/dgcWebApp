@@ -30,7 +30,7 @@ function Home() {
                     marginBottom: "14px",
                   }}
                 >
-                  Doncaster Garden Club • Since 1977
+                  Doncaster Garden Club • Since 1976
                 </div>
 
                 <h1
