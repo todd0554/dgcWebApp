@@ -1,12 +1,13 @@
-import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
-import Profile from './Profile';
-import theme from '../config/theme';
+// src/components/UploadImage.jsx
+import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+import Profile from "./Profile";
+import theme from "../config/theme";
 
 function UploadImage() {
   return (
     <ChakraProvider theme={theme}>
-        <Profile />
+      <Profile />
     </ChakraProvider>
   );
 }

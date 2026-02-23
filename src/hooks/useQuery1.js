@@ -1,27 +1,39 @@
-import { useEffect, useState } from 'react';
-import axiosClient from '../config/axiosNew';
+// src/hooks/useQuery1.js  (Event)
+import { useEffect, useState } from "react";
+import axiosClient from "../config/axiosNew";
 
 const useQuery1 = (url, refetch) => {
-    const [state, setState] = useState({
-      data: null,
-      isLoading: true,
-      error: '',
-    });
-  
-    useEffect(() => {
-      const fetch = async () => {
-        axiosClient
-          .get(url)
-          .then(({ data }) => setState({ data, isLoading: false, error: '' }))
-          .catch(error =>
-            setState({ data: null, isLoading: false, error: error.message })
-          );
-      };
-  
-      fetch();
-    }, [url, refetch]);
-  
-    return state;
-  };
-  
-  export default useQuery1;
+  const [state, setState] = useState({
+    data: null,
+    isLoading: true,
+    error: "",
+  });
+
+  useEffect(() => {
+    let alive = true;
+
+    const fetch = async () => {
+      try {
+        const { data } = await axiosClient.get(url);
+        if (!alive) return;
+        setState({ data, isLoading: false, error: "" });
+      } catch (error) {
+        if (!alive) return;
+        setState({
+          data: null,
+          isLoading: false,
+          error: error?.message || "Failed to fetch",
+        });
+      }
+    };
+
+    fetch();
+    return () => {
+      alive = false;
+    };
+  }, [url, refetch]);
+
+  return state;
+};
+
+export default useQuery1;

@@ -1,16 +1,44 @@
-import React from 'react'
-import {Container, Row, Col} from 'react-bootstrap'
+// src/components/Footer.jsx
+import React from "react";
+import { Container } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer>
-        <Container>
-            <Row>
-                <Col className="text-center py-3" style={{color: 'white'}}>&copy; Doncaster Garden Club</Col>
-            </Row>
-        </Container>
-    </footer>
-  )
-}
+    <footer className="dgc-footer">
+      <Container className="dgc-footer__inner">
+        <div className="dgc-footer__social">
+          <a
+            className="dgc-footer__icon"
+            href="/"
+            aria-label="Facebook"
+            title="Facebook"
+          >
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            className="dgc-footer__icon"
+            href="/"
+            aria-label="Twitter"
+            title="Twitter"
+          >
+            <i className="fa-brands fa-twitter-square"></i>
+          </a>
+          <a
+            className="dgc-footer__icon"
+            href="/"
+            aria-label="Instagram"
+            title="Instagram"
+          >
+            <i className="fa-brands fa-instagram-square"></i>
+          </a>
+        </div>
 
-export default Footer
+        <div className="dgc-footer__copy">
+          © {new Date().getFullYear()} Doncaster Garden Club Inc.
+        </div>
+      </Container>
+    </footer>
+  );
+};
+
+export default Footer;

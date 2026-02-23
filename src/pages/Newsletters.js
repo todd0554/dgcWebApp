@@ -1,7 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 
-
 function Newsletters() {
   const Newsletters2021 = [
     "Garden club newsletter February 2021 -.pdf",
@@ -16,7 +15,7 @@ function Newsletters() {
     "Garden club newsletter November  2021.pdf",
     "Garden club newsletter December  2021.pdf",
   ]
-  
+
   const Newsletters2022 = [
     "Garden club newsletter February 2022 pub.pdf",
     "Garden club newsletter March 2022 pub.pdf",
@@ -68,89 +67,142 @@ function Newsletters() {
     "7. August 2025 Newsletter.pdf",
     "8. September 2025 Newsletter.pdf",
     "9. October 2025 Newsletter.pdf",
-    "10. November 2025 Newsletter.pdf"
+    "10. November 2025 Newsletter.pdf",
+  ]
+
+  const Newsletters2026 = [
+    "DGC Newsletter February 2026.pdf",
   ]
 
   return (
-    <div style={{margin:"10px"}}> 
-    <div style={{padding:"10px"}}>
-    <h1>Newsletters</h1> 
-    <h2>September 2025 Newsletter</h2>
-    <iframe title="2025" src="/documentation/newsletter/2025/10. November 2025 Newsletter.pdf" width="100%" height="800px"></iframe>
+    <div className="page">
+      <div className="page-inner">
+        <h1>Newsletters</h1>
+        <h2>February 2026 Newsletter</h2>
 
-      <Row style={{ textAlign:"center"}}>
-      <Col lg={12} style={{ marginTop:"20px"}}>
-        <details>
-        <summary>2025 Newsletters</summary>
-          {Newsletters2025.map((a) => {
-          return (
-            <>
-              <a className="newsletter123" target="_blank" rel="noreferrer" href={"/documentation/newsletter/2025/" + a}>{a}</a>
-              <br/>
-            </>
-          )
-        })}
-        </details>
-      </Col>
-      <Col lg={12} style={{ marginTop:"20px"}}>
-        <details>
-        <summary>2024 Newsletters</summary>
-          {Newsletters2024.map((a) => {
-          return (
-            <>
-              <a className="newsletter123" target="_blank" rel="noreferrer" href={"/documentation/newsletter/2024/" + a}>{a}</a>
-              <br/>
-            </>
-          )
-        })}
-        </details>
-      </Col>
+        <iframe
+          title="2026"
+          src="/documentation/newsletter/2026/DGC Newsletter February 2026.pdf"
+          width="100%"
+          height="800px"
+        />
 
-      <Col lg={12} style={{ marginTop:"20px"}}>
-        <details>
-        <summary>2023 Newsletters</summary>
-          {Newsletters2023.map((a) => {
-          return (
-            <>
-              <a className="newsletter123" target="_blank" rel="noreferrer" href={"/documentation/newsletter/2023/" + a}>{a}</a>
-              <br/>
-            </>
-          )
-        })}
-        </details>
-      </Col>
+        <Row style={{ textAlign: "center" }}>
+          <Col lg={12} style={{ marginTop: "20px" }}>
+            <details>
+              <summary>2026 Newsletters</summary>
+              {Newsletters2026.map((a) => (
+                <React.Fragment key={a}>
+                  <a
+                    className="newsletter123"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={`/documentation/newsletter/2026/${a}`}
+                  >
+                    {a}
+                  </a>
+                  <br />
+                </React.Fragment>
+              ))}
+            </details>
+          </Col>
 
-      <Col lg={12} style={{ marginTop:"20px"}}>
-        <details>
-        <summary>2022 Newsletters</summary>
-          {Newsletters2022.map((a) => {
-          return (
-            <>
-              <a className="newsletter123" target="_blank" rel="noreferrer" href={"/documentation/newsletter/2022/" + a}>{a}</a>
-              <br/>
-            </>
-          )
-        })}
-        </details>
-      </Col>
+          <Col lg={12} style={{ marginTop: "20px" }}>
+            <details>
+              <summary>2025 Newsletters</summary>
+              {Newsletters2025.map((a) => (
+                <React.Fragment key={a}>
+                  <a
+                    className="newsletter123"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={`/documentation/newsletter/2025/${a}`}
+                  >
+                    {a}
+                  </a>
+                  <br />
+                </React.Fragment>
+              ))}
+            </details>
+          </Col>
 
-      <Col lg={12} style={{ marginTop:"20px"}}>
-      
-        <details>
-          <summary>2021 Newsletters</summary>
-          {Newsletters2021.map((a) => {
-            return (
-              <>
-                <a className="newsletter123" target="_blank" rel="noreferrer" href={"/documentation/newsletter/2021/" + a}>{a}</a>
-                <br/>
-              </>
-            )
-          })}
-        </details>
-      </Col>
-      </Row>
-    </div>
-     
+          <Col lg={12} style={{ marginTop: "20px" }}>
+            <details>
+              <summary>2024 Newsletters</summary>
+              {Newsletters2024.map((a) => (
+                <React.Fragment key={a}>
+                  <a
+                    className="newsletter123"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={`/documentation/newsletter/2024/${a}`}
+                  >
+                    {a}
+                  </a>
+                  <br />
+                </React.Fragment>
+              ))}
+            </details>
+          </Col>
+
+          <Col lg={12} style={{ marginTop: "20px" }}>
+            <details>
+              <summary>2023 Newsletters</summary>
+              {Newsletters2023.map((a) => (
+                <React.Fragment key={a}>
+                  <a
+                    className="newsletter123"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={`/documentation/newsletter/2023/${a}`}
+                  >
+                    {a}
+                  </a>
+                  <br />
+                </React.Fragment>
+              ))}
+            </details>
+          </Col>
+
+          <Col lg={12} style={{ marginTop: "20px" }}>
+            <details>
+              <summary>2022 Newsletters</summary>
+              {Newsletters2022.map((a) => (
+                <React.Fragment key={a}>
+                  <a
+                    className="newsletter123"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={`/documentation/newsletter/2022/${a}`}
+                  >
+                    {a}
+                  </a>
+                  <br />
+                </React.Fragment>
+              ))}
+            </details>
+          </Col>
+
+          <Col lg={12} style={{ marginTop: "20px" }}>
+            <details>
+              <summary>2021 Newsletters</summary>
+              {Newsletters2021.map((a) => (
+                <React.Fragment key={a}>
+                  <a
+                    className="newsletter123"
+                    target="_blank"
+                    rel="noreferrer"
+                    href={`/documentation/newsletter/2021/${a}`}
+                  >
+                    {a}
+                  </a>
+                  <br />
+                </React.Fragment>
+              ))}
+            </details>
+          </Col>
+        </Row>
+      </div>
     </div>
   )
 }

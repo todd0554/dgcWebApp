@@ -2,13 +2,18 @@ import React from 'react'
 
 function BecomeAMember() {
   return (
-    <div style={{margin:"10px"}}>
-      <div style={{padding:"10px"}}>        
-      <h1>How to become a member?</h1>
+    <div className="page">
+      <div className="page-inner">
+        <h1>How to become a member?</h1>
         <p>Please follow the instructions and finish the application form.</p>
-        <iframe title="member" src="/documentation/Membership application.pdf" width="100%" height="800px"></iframe>
-      </div>
 
+        <iframe
+          title="member"
+          src="/documentation/Membership application.pdf"
+          width="100%"
+          height="800px"
+        />
+      </div>
     </div>
   )
 }
